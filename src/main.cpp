@@ -2,7 +2,7 @@
 
 int main()
 {
-    Config cfg("configuration.ini");
+    Config cfg("../configuration.ini");
     std::cout << cfg["health"] << '\n';
     std::cout << cfg["damage"] << '\n';
     std::cout << cfg["move_speed"] << '\n';
