@@ -28,6 +28,7 @@ const std::string Config::operator[](const std::string& key) const {
 const std::string Config::at(const std::string& key) const {
     try {
         std::string r = ini.at(key);
+        return r;
     }
     catch (std::out_of_range& e){
         std::cout << e.what() << std::endl;
